@@ -1,0 +1,95 @@
+/* Author: lama (https://github.com/cutelama) */
+/* Dependency: rofi-calc */
+
+configuration {
+  modes: [ drun, calc ];
+}
+
+* {
+
+  font: "Roboto Mono 11";
+
+  font0:rgb(255, 255, 255);
+  bg0:rgb(200, 200, 200);
+  bg1:rgba(200, 200, 200, 0.3);
+
+}
+
+/* Main window */
+
+window {
+  fullscreen: true;
+  background-color: transparent;
+
+  children: [inputbar, message, listview ];
+}
+
+/* Search bar */
+
+inputbar {
+  margin: calc( 45% ) calc( 50% - 120px ) 0px calc( 50% - 120px );
+
+  children: [entry];
+}
+
+entry {
+  horizontal-align: 0.5;
+
+  placeholder: "The magic is here...";
+  
+  placeholder-color: @bg0;
+  text-color: @font0;
+}
+
+/* Message */                                                          
+
+message {
+  border: 0px; // remove dashed line
+  padding: 6px;
+  margin: 6px calc( 50% - 400px ) 0px calc( 50% - 400px );
+
+  children: [ textbox ];
+}
+
+textbox {
+  horizontal-align: 0.5;
+
+  text-color: @font0;
+}
+
+/* List  */
+
+listview {
+  border: 0px; // remove dashed line
+  margin: 4px calc( 50% - 140px ) calc( 46% + 7px ) calc( 50% - 140px ); 
+  
+  scrollbar: false;
+}
+
+element {
+  padding: 6px; 
+  border-radius: 12px; 
+
+  children: [ element-icon, element-text ];
+}
+
+element selected.normal {
+  background-color: transparent;
+}
+
+element-icon {
+  size: 1em;
+  horizontal-align: 0.5;
+}
+
+element-text {
+  horizontal-align: 0.5;
+  text-color: @font0;
+}
+
+/* Modes */
+
+mode-switcher {
+
+}
+

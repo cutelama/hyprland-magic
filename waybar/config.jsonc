@@ -1,0 +1,97 @@
+/* Author: lama (https://github.com/cutelama) */
+{
+    "layer": "top",
+    "spacing": 0,
+    "height": 30,
+
+    "margin-top": 0,
+    "margin-right": 14,
+    "margin-bottom": 0,
+    "margin-left": 14,
+
+    "modules-left": [
+        "clock"
+    ],
+
+    "modules-center": [
+        "hyprland/window",
+        "custom/sep",
+        "hyprland/workspaces"
+    ],
+
+    "modules-right": [
+        "cpu",
+        "memory",
+        "battery",
+        "network",
+        "pulseaudio"
+    ],
+
+    "hyprland/window": {
+        "separate-outputs": true,
+        "format": "{class}"
+    },
+
+    "custom/sep": {
+        "format": "~"
+    },
+
+    "hyprland/workspaces": {
+        "disable-scroll": true,
+        "all-outputs": true,
+        "tooltip": false,
+        "active-only": true,
+        "format": "Workspase {name}"
+    },
+
+    "clock": {
+        "format": "{:%I:%M %p - %a, %d %b %Y}",
+        "tooltip": false
+    },
+
+    "cpu": {
+        "format": "cpu {usage}%",
+        "interval": 2,
+
+        "states": {
+            "critical": 90
+        }
+    },
+
+    "memory": {
+        "format": "ram {percentage}%",
+        "interval": 2,
+
+        "states": {
+            "critical": 80
+        }
+    },
+
+    "battery": {
+        "format": "bat {capacity}%",
+        "interval": 5,
+        "states": {
+            "warning": 30,
+            "critical": 20
+        },
+        "tooltip": false
+    },
+
+    "network": {
+        "format-wifi" : "wifi {bandwidthDownBits}",
+        "format-ethernet": "enth {bandwidthDownBits}",
+        "format-disconnected" : "no network",
+        "interval": 5,
+        "tooltip": false
+    },
+
+    "pulseaudio": {
+        "scroll-step": 5,
+        "max-volume": 100,
+        "format": "vol {volume}%",
+        "format-bluetooth": "vol {volume}%",
+        "nospacing": 1,
+        "on-click": "pavucontrol",
+        "tooltip": false
+    }
+}
