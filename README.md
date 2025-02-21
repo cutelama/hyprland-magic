@@ -1,3 +1,8 @@
-![hype](https://github.com/user-attachments/assets/5c0572ce-3a87-4c8d-a663-9e8082f84d1e)
-![hypw](https://github.com/user-attachments/assets/3d565f3c-c981-46ca-929d-ddb97aa54c08)
+## Screenshots
+<details>
+<summary>Tap</summary>
+![изображение](https://github.com/user-attachments/assets/892788f0-6176-42fe-b09b-ab7eaffd8cea)
+![изображение](https://github.com/user-attachments/assets/c4d159c6-c8a7-4160-976e-9b8a064c8e3a)
+![изображение](https://github.com/user-attachments/assets/6287afd3-97df-4688-bf2e-f0ac0a33d184)
+</details>
 
