@@ -24,7 +24,7 @@
 
 # See https://wiki.hyprland.org/Configuring/Monitors/
 monitor=HDMI-A-1,1920x1080@120,0x0,1
-monitor=eDP-1,1920x1080@60, 1920x0,1
+monitor=eeDP-1,1920x1080@60, 1920x0,1
 
 ##################
 ### WORKSPACES ###
@@ -86,8 +86,6 @@ env = HYPRCURSOR_SIZE,20
 
 env = LIBVA_DRIVER_NAME,nvidia
 env = __GLX_VENDOR_LIBRARY_NAME,nvidia
-
-env = QT_QPA_PLATFORMTHEME,qt5ct
 
 #####################
 ### LOOK AND FEEL ###

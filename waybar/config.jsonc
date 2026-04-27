@@ -29,7 +29,7 @@
 
     "hyprland/window": {
         "separate-outputs": true,
-        "format": "{class}"
+        "format": "{title}"
     },
 
     "custom/sep": {
@@ -38,10 +38,10 @@
 
     "hyprland/workspaces": {
         "disable-scroll": true,
-        "all-outputs": true,
+        "all-outputs": false,
         "tooltip": false,
         "active-only": true,
-        "format": "Workspase {name}"
+        "format": "Workspace {name}"
     },
 
     "clock": {
