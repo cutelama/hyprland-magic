@@ -1,10 +1,15 @@
-## dependencies
-- wal
-- swww
-- rofi-calc
-- 
-- gdk theme: adw-gdk3-dark
-- 
+# My poor hyprland dots (first experience)
+
+## components used in
+- hyprlock
+- rofi
+- waybar
+- awww
+- hyprsunset
+
+## features
+- sync border color on wallpaper change
+
 ## Screenshots
 
 ![изображение](https://github.com/user-attachments/assets/6287afd3-97df-4688-bf2e-f0ac0a33d184)
